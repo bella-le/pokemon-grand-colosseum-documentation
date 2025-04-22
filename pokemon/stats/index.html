@@ -1,0 +1,1230 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://bella-le.com/pokemon-grand-colosseum-documentation/pokemon/stats/">
+      
+      
+        <link rel="prev" href="../tm-list/">
+      
+      
+        <link rel="next" href="../trainer-pokemon/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+    
+    
+      
+        <title>Pokemon Stats - Pokemon Grand Colosseum Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pokemon-stats" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pokemon Grand Colosseum Documentation" class="md-header__button md-logo" aria-label="Pokemon Grand Colosseum Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pokemon Grand Colosseum Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pokemon Stats
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/bella-le/pokemon-grand-colosseum-documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bella-le/pokemon-grand-colosseum-documentation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pokemon Grand Colosseum Documentation" class="md-nav__button md-logo" aria-label="Pokemon Grand Colosseum Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Pokemon Grand Colosseum Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bella-le/pokemon-grand-colosseum-documentation" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bella-le/pokemon-grand-colosseum-documentation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Game Changes
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Game Changes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-changes/main-changes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main Changes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-changes/type-changes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Type Changes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-changes/stat-changes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stat Changes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-changes/move-changes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Move Changes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-changes/ability-changes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ability Changes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../game-changes/mount-battle-changes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mount Battle Changes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Gameplay
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Gameplay
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gameplay/tips-if-struggling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tips If Struggling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gameplay/colosseums-and-levelcaps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Colosseums and Level Caps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gameplay/item-locations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Item Locations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gameplay/known-issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Known Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gameplay/shadow-pokemon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shadow Pokemon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Pokemon Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Pokemon Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tm-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TM List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pokemon Stats
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Pokemon Stats
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#gen-i" class="md-nav__link">
+    Gen I
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gen-ii" class="md-nav__link">
+    Gen II
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gen-iii" class="md-nav__link">
+    Gen III
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regional-forms" class="md-nav__link">
+    Regional Forms
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trainer-pokemon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trainer Pokemon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="pokemon-stats">Pokémon Stats</h1>
+<p>Note that Nidoran (both genders) is not present in this romhack.</p>
+<h2 id="gen-i">Gen I</h2>
+<ul>
+<li><a href="001-bulbasaur/">001 Bulbasaur</a></li>
+<li><a href="002-ivysaur/">002 Ivysaur</a></li>
+<li><a href="003-venusaur/">003 Venusaur</a></li>
+<li><a href="004-charmander/">004 Charmander</a></li>
+<li><a href="005-charmeleon/">005 Charmeleon</a></li>
+<li><a href="006-charizard/">006 Charizard</a></li>
+<li><a href="007-squirtle/">007 Squirtle</a></li>
+<li><a href="008-wartortle/">008 Wartortle</a></li>
+<li><a href="009-blastoise/">009 Blastoise</a></li>
+<li><a href="010-caterpie/">010 Caterpie</a></li>
+<li><a href="011-metapod/">011 Metapod</a></li>
+<li><a href="012-butterfree/">012 Butterfree</a></li>
+<li><a href="013-weedle/">013 Weedle</a></li>
+<li><a href="014-kakuna/">014 Kakuna</a></li>
+<li><a href="015-beedrill/">015 Beedrill</a></li>
+<li><a href="016-pidgey/">016 Pidgey</a></li>
+<li><a href="017-pidgeotto/">017 Pidgeotto</a></li>
+<li><a href="018-pidgeot/">018 Pidgeot</a></li>
+<li><a href="019-rattata/">019 Rattata</a></li>
+<li><a href="020-raticate/">020 Raticate</a></li>
+<li><a href="021-spearow/">021 Spearow</a></li>
+<li><a href="022-fearow/">022 Fearow</a></li>
+<li><a href="023-ekans/">023 Ekans</a></li>
+<li><a href="024-arbok/">024 Arbok</a></li>
+<li><a href="025-pikachu/">025 Pikachu</a></li>
+<li><a href="026-raichu/">026 Raichu</a></li>
+<li><a href="027-sandshrew/">027 Sandshrew</a></li>
+<li><a href="028-sandslash/">028 Sandslash</a></li>
+<li><a href="030-nidorina/">030 Nidorina</a></li>
+<li><a href="031-nidoqueen/">031 Nidoqueen</a></li>
+<li><a href="033-nidorino/">033 Nidorino</a></li>
+<li><a href="034-nidoking/">034 Nidoking</a></li>
+<li><a href="035-clefairy/">035 Clefairy</a></li>
+<li><a href="036-clefable/">036 Clefable</a></li>
+<li><a href="037-vulpix/">037 Vulpix</a></li>
+<li><a href="038-ninetales/">038 Ninetales</a></li>
+<li><a href="039-jigglypuff/">039 Jigglypuff</a></li>
+<li><a href="040-wigglytuff/">040 Wigglytuff</a></li>
+<li><a href="041-zubat/">041 Zubat</a></li>
+<li><a href="042-golbat/">042 Golbat</a></li>
+<li><a href="043-oddish/">043 Oddish</a></li>
+<li><a href="044-gloom/">044 Gloom</a></li>
+<li><a href="045-vileplume/">045 Vileplume</a></li>
+<li><a href="046-paras/">046 Paras</a></li>
+<li><a href="047-parasect/">047 Parasect</a></li>
+<li><a href="048-venonat/">048 Venonat</a></li>
+<li><a href="049-venomoth/">049 Venomoth</a></li>
+<li><a href="050-diglett/">050 Diglett</a></li>
+<li><a href="051-dugtrio/">051 Dugtrio</a></li>
+<li><a href="052-meowth/">052 Meowth</a></li>
+<li><a href="053-persian/">053 Persian</a></li>
+<li><a href="054-psyduck/">054 Psyduck</a></li>
+<li><a href="055-golduck/">055 Golduck</a></li>
+<li><a href="056-mankey/">056 Mankey</a></li>
+<li><a href="057-primeape/">057 Primeape</a></li>
+<li><a href="058-growlithe/">058 Growlithe</a></li>
+<li><a href="059-arcanine/">059 Arcanine</a></li>
+<li><a href="060-poliwag/">060 Poliwag</a></li>
+<li><a href="061-poliwhirl/">061 Poliwhirl</a></li>
+<li><a href="062-poliwrath/">062 Poliwrath</a></li>
+<li><a href="063-abra/">063 Abra</a></li>
+<li><a href="064-kadabra/">064 Kadabra</a></li>
+<li><a href="065-alakazam/">065 Alakazam</a></li>
+<li><a href="066-machop/">066 Machop</a></li>
+<li><a href="067-machoke/">067 Machoke</a></li>
+<li><a href="068-machamp/">068 Machamp</a></li>
+<li><a href="069-bellsprout/">069 Bellsprout</a></li>
+<li><a href="070-weepinbell/">070 Weepinbell</a></li>
+<li><a href="071-victreebel/">071 Victreebel</a></li>
+<li><a href="072-tentacool/">072 Tentacool</a></li>
+<li><a href="073-tentacruel/">073 Tentacruel</a></li>
+<li><a href="074-geodude/">074 Geodude</a></li>
+<li><a href="075-graveler/">075 Graveler</a></li>
+<li><a href="076-golem/">076 Golem</a></li>
+<li><a href="077-ponyta/">077 Ponyta</a></li>
+<li><a href="078-rapidash/">078 Rapidash</a></li>
+<li><a href="079-slowpoke/">079 Slowpoke</a></li>
+<li><a href="080-slowbro/">080 Slowbro</a></li>
+<li><a href="081-magnemite/">081 Magnemite</a></li>
+<li><a href="082-magneton/">082 Magneton</a></li>
+<li><a href="083-farfetchd/">083 Farfetch'd</a></li>
+<li><a href="084-doduo/">084 Doduo</a></li>
+<li><a href="085-dodrio/">085 Dodrio</a></li>
+<li><a href="086-seel/">086 Seel</a></li>
+<li><a href="087-dewgong/">087 Dewgong</a></li>
+<li><a href="088-grimer/">088 Grimer</a></li>
+<li><a href="089-muk/">089 Muk</a></li>
+<li><a href="090-shellder/">090 Shellder</a></li>
+<li><a href="091-cloyster/">091 Cloyster</a></li>
+<li><a href="092-gastly/">092 Gastly</a></li>
+<li><a href="093-haunter/">093 Haunter</a></li>
+<li><a href="094-gengar/">094 Gengar</a></li>
+<li><a href="095-onix/">095 Onix</a></li>
+<li><a href="096-drowzee/">096 Drowzee</a></li>
+<li><a href="097-hypno/">097 Hypno</a></li>
+<li><a href="098-krabby/">098 Krabby</a></li>
+<li><a href="099-kingler/">099 Kingler</a></li>
+<li><a href="100-voltorb/">100 Voltorb</a></li>
+<li><a href="101-electrode/">101 Electrode</a></li>
+<li><a href="102-exeggcute/">102 Exeggcute</a></li>
+<li><a href="103-exeggutor/">103 Exeggutor</a></li>
+<li><a href="104-cubone/">104 Cubone</a></li>
+<li><a href="105-marowak/">105 Marowak</a></li>
+<li><a href="106-hitmonlee/">106 Hitmonlee</a></li>
+<li><a href="107-hitmonchan/">107 Hitmonchan</a></li>
+<li><a href="108-lickitung/">108 Lickitung</a></li>
+<li><a href="109-koffing/">109 Koffing</a></li>
+<li><a href="110-weezing/">110 Weezing</a></li>
+<li><a href="111-rhyhorn/">111 Rhyhorn</a></li>
+<li><a href="112-rhydon/">112 Rhydon</a></li>
+<li><a href="113-chansey/">113 Chansey</a></li>
+<li><a href="114-tangela/">114 Tangela</a></li>
+<li><a href="115-kangaskhan/">115 Kangaskhan</a></li>
+<li><a href="116-horsea/">116 Horsea</a></li>
+<li><a href="117-seadra/">117 Seadra</a></li>
+<li><a href="118-goldeen/">118 Goldeen</a></li>
+<li><a href="119-seaking/">119 Seaking</a></li>
+<li><a href="120-staryu/">120 Staryu</a></li>
+<li><a href="121-starmie/">121 Starmie</a></li>
+<li><a href="122-mr-mime/">122 Mr. Mime</a></li>
+<li><a href="123-scyther/">123 Scyther</a></li>
+<li><a href="124-jynx/">124 Jynx</a></li>
+<li><a href="125-electabuzz/">125 Electabuzz</a></li>
+<li><a href="126-magmar/">126 Magmar</a></li>
+<li><a href="127-pinsir/">127 Pinsir</a></li>
+<li><a href="128-tauros/">128 Tauros</a></li>
+<li><a href="129-magikarp/">129 Magikarp</a></li>
+<li><a href="130-gyarados/">130 Gyarados</a></li>
+<li><a href="131-lapras/">131 Lapras</a></li>
+<li><a href="132-ditto/">132 Ditto</a></li>
+<li><a href="133-eevee/">133 Eevee</a></li>
+<li><a href="134-vaporeon/">134 Vaporeon</a></li>
+<li><a href="135-jolteon/">135 Jolteon</a></li>
+<li><a href="136-flareon/">136 Flareon</a></li>
+<li><a href="137-porygon/">137 Porygon</a></li>
+<li><a href="138-omanyte/">138 Omanyte</a></li>
+<li><a href="139-omastar/">139 Omastar</a></li>
+<li><a href="140-kabuto/">140 Kabuto</a></li>
+<li><a href="141-kabutops/">141 Kabutops</a></li>
+<li><a href="142-aerodactyl/">142 Aerodactyl</a></li>
+<li><a href="143-snorlax/">143 Snorlax</a></li>
+<li><a href="144-articuno/">144 Articuno</a></li>
+<li><a href="145-zapdos/">145 Zapdos</a></li>
+<li><a href="146-moltres/">146 Moltres</a></li>
+<li><a href="147-dratini/">147 Dratini</a></li>
+<li><a href="148-dragonair/">148 Dragonair</a></li>
+<li><a href="149-dragonite/">149 Dragonite</a></li>
+<li><a href="150-mewtwo/">150 Mewtwo</a></li>
+<li><a href="151-mew/">151 Mew</a></li>
+</ul>
+<h2 id="gen-ii">Gen II</h2>
+<ul>
+<li><a href="152-chikorita/">152 Chikorita</a></li>
+<li><a href="153-bayleef/">153 Bayleef</a></li>
+<li><a href="154-meganium/">154 Meganium</a></li>
+<li><a href="155-cyndaquil/">155 Cyndaquil</a></li>
+<li><a href="156-quilava/">156 Quilava</a></li>
+<li><a href="157-typhlosion/">157 Typhlosion</a></li>
+<li><a href="158-totodile/">158 Totodile</a></li>
+<li><a href="159-croconaw/">159 Croconaw</a></li>
+<li><a href="160-feraligatr/">160 Feraligatr</a></li>
+<li><a href="161-sentret/">161 Sentret</a></li>
+<li><a href="162-furret/">162 Furret</a></li>
+<li><a href="163-hoothoot/">163 Hoothoot</a></li>
+<li><a href="164-noctowl/">164 Noctowl</a></li>
+<li><a href="165-ledyba/">165 Ledyba</a></li>
+<li><a href="166-ledian/">166 Ledian</a></li>
+<li><a href="167-spinarak/">167 Spinarak</a></li>
+<li><a href="168-ariados/">168 Ariados</a></li>
+<li><a href="169-crobat/">169 Crobat</a></li>
+<li><a href="170-chinchou/">170 Chinchou</a></li>
+<li><a href="171-lanturn/">171 Lanturn</a></li>
+<li><a href="172-pichu/">172 Pichu</a></li>
+<li><a href="173-cleffa/">173 Cleffa</a></li>
+<li><a href="174-igglybuff/">174 Igglybuff</a></li>
+<li><a href="175-togepi/">175 Togepi</a></li>
+<li><a href="176-togetic/">176 Togetic</a></li>
+<li><a href="177-natu/">177 Natu</a></li>
+<li><a href="178-xatu/">178 Xatu</a></li>
+<li><a href="179-mareep/">179 Mareep</a></li>
+<li><a href="180-flaaffy/">180 Flaaffy</a></li>
+<li><a href="181-ampharos/">181 Ampharos</a></li>
+<li><a href="182-bellossom/">182 Bellossom</a></li>
+<li><a href="183-marill/">183 Marill</a></li>
+<li><a href="184-azumarill/">184 Azumarill</a></li>
+<li><a href="185-sudowoodo/">185 Sudowoodo</a></li>
+<li><a href="186-politoed/">186 Politoed</a></li>
+<li><a href="187-hoppip/">187 Hoppip</a></li>
+<li><a href="188-skiploom/">188 Skiploom</a></li>
+<li><a href="189-jumpluff/">189 Jumpluff</a></li>
+<li><a href="190-aipom/">190 Aipom</a></li>
+<li><a href="191-sunkern/">191 Sunkern</a></li>
+<li><a href="192-sunflora/">192 Sunflora</a></li>
+<li><a href="193-yanma/">193 Yanma</a></li>
+<li><a href="194-wooper/">194 Wooper</a></li>
+<li><a href="195-quagsire/">195 Quagsire</a></li>
+<li><a href="196-espeon/">196 Espeon</a></li>
+<li><a href="197-umbreon/">197 Umbreon</a></li>
+<li><a href="198-murkrow/">198 Murkrow</a></li>
+<li><a href="199-slowking/">199 Slowking</a></li>
+<li><a href="200-misdreavus/">200 Misdreavus</a></li>
+<li><a href="201-unown/">201 Unown</a></li>
+<li><a href="202-wobbuffet/">202 Wobbuffet</a></li>
+<li><a href="203-girafarig/">203 Girafarig</a></li>
+<li><a href="204-pineco/">204 Pineco</a></li>
+<li><a href="205-forretress/">205 Forretress</a></li>
+<li><a href="206-dunsparce/">206 Dunsparce</a></li>
+<li><a href="207-gligar/">207 Gligar</a></li>
+<li><a href="208-steelix/">208 Steelix</a></li>
+<li><a href="209-snubbull/">209 Snubbull</a></li>
+<li><a href="210-granbull/">210 Granbull</a></li>
+<li><a href="211-qwilfish/">211 Qwilfish</a></li>
+<li><a href="212-scizor/">212 Scizor</a></li>
+<li><a href="213-shuckle/">213 Shuckle</a></li>
+<li><a href="214-heracross/">214 Heracross</a></li>
+<li><a href="215-sneasel/">215 Sneasel</a></li>
+<li><a href="216-teddiursa/">216 Teddiursa</a></li>
+<li><a href="217-ursaring/">217 Ursaring</a></li>
+<li><a href="218-slugma/">218 Slugma</a></li>
+<li><a href="219-magcargo/">219 Magcargo</a></li>
+<li><a href="220-swinub/">220 Swinub</a></li>
+<li><a href="221-piloswine/">221 Piloswine</a></li>
+<li><a href="222-corsola/">222 Corsola</a></li>
+<li><a href="223-remoraid/">223 Remoraid</a></li>
+<li><a href="224-octillery/">224 Octillery</a></li>
+<li><a href="225-delibird/">225 Delibird</a></li>
+<li><a href="226-mantine/">226 Mantine</a></li>
+<li><a href="227-skarmory/">227 Skarmory</a></li>
+<li><a href="228-houndour/">228 Houndour</a></li>
+<li><a href="229-houndoom/">229 Houndoom</a></li>
+<li><a href="230-kingdra/">230 Kingdra</a></li>
+<li><a href="231-phanpy/">231 Phanpy</a></li>
+<li><a href="232-donphan/">232 Donphan</a></li>
+<li><a href="233-porygon2/">233 Porygon2</a></li>
+<li><a href="234-stantler/">234 Stantler</a></li>
+<li><a href="235-smeargle/">235 Smeargle</a></li>
+<li><a href="236-tyrogue/">236 Tyrogue</a></li>
+<li><a href="237-hitmontop/">237 Hitmontop</a></li>
+<li><a href="238-smoochum/">238 Smoochum</a></li>
+<li><a href="239-elekid/">239 Elekid</a></li>
+<li><a href="240-magby/">240 Magby</a></li>
+<li><a href="241-miltank/">241 Miltank</a></li>
+<li><a href="242-blissey/">242 Blissey</a></li>
+<li><a href="243-raikou/">243 Raikou</a></li>
+<li><a href="244-entei/">244 Entei</a></li>
+<li><a href="245-suicune/">245 Suicune</a></li>
+<li><a href="246-larvitar/">246 Larvitar</a></li>
+<li><a href="247-pupitar/">247 Pupitar</a></li>
+<li><a href="248-tyranitar/">248 Tyranitar</a></li>
+<li><a href="249-lugia/">249 Lugia</a></li>
+<li><a href="250-ho-oh/">250 Ho-Oh</a></li>
+<li><a href="251-celebi/">251 Celebi</a></li>
+</ul>
+<h2 id="gen-iii">Gen III</h2>
+<ul>
+<li><a href="252-treecko/">252 Treecko</a></li>
+<li><a href="253-grovyle/">253 Grovyle</a></li>
+<li><a href="254-sceptile/">254 Sceptile</a></li>
+<li><a href="255-torchic/">255 Torchic</a></li>
+<li><a href="256-combusken/">256 Combusken</a></li>
+<li><a href="257-blaziken/">257 Blaziken</a></li>
+<li><a href="258-mudkip/">258 Mudkip</a></li>
+<li><a href="259-marshtomp/">259 Marshtomp</a></li>
+<li><a href="260-swampert/">260 Swampert</a></li>
+<li><a href="261-poochyena/">261 Poochyena</a></li>
+<li><a href="262-mightyena/">262 Mightyena</a></li>
+<li><a href="263-zigzagoon/">263 Zigzagoon</a></li>
+<li><a href="264-linoone/">264 Linoone</a></li>
+<li><a href="265-wurmple/">265 Wurmple</a></li>
+<li><a href="266-silcoon/">266 Silcoon</a></li>
+<li><a href="267-beautifly/">267 Beautifly</a></li>
+<li><a href="268-cascoon/">268 Cascoon</a></li>
+<li><a href="269-dustox/">269 Dustox</a></li>
+<li><a href="270-lotad/">270 Lotad</a></li>
+<li><a href="271-lombre/">271 Lombre</a></li>
+<li><a href="272-ludicolo/">272 Ludicolo</a></li>
+<li><a href="273-seedot/">273 Seedot</a></li>
+<li><a href="274-nuzleaf/">274 Nuzleaf</a></li>
+<li><a href="275-shiftry/">275 Shiftry</a></li>
+<li><a href="276-taillow/">276 Taillow</a></li>
+<li><a href="277-swellow/">277 Swellow</a></li>
+<li><a href="278-wingull/">278 Wingull</a></li>
+<li><a href="279-pelipper/">279 Pelipper</a></li>
+<li><a href="280-ralts/">280 Ralts</a></li>
+<li><a href="281-kirlia/">281 Kirlia</a></li>
+<li><a href="282-gardevoir/">282 Gardevoir</a></li>
+<li><a href="283-surskit/">283 Surskit</a></li>
+<li><a href="284-masquerain/">284 Masquerain</a></li>
+<li><a href="285-shroomish/">285 Shroomish</a></li>
+<li><a href="286-breloom/">286 Breloom</a></li>
+<li><a href="287-slakoth/">287 Slakoth</a></li>
+<li><a href="288-vigoroth/">288 Vigoroth</a></li>
+<li><a href="289-slaking/">289 Slaking</a></li>
+<li><a href="290-nincada/">290 Nincada</a></li>
+<li><a href="291-ninjask/">291 Ninjask</a></li>
+<li><a href="292-shedinja/">292 Shedinja</a></li>
+<li><a href="293-whismur/">293 Whismur</a></li>
+<li><a href="294-loudred/">294 Loudred</a></li>
+<li><a href="295-exploud/">295 Exploud</a></li>
+<li><a href="296-makuhita/">296 Makuhita</a></li>
+<li><a href="297-hariyama/">297 Hariyama</a></li>
+<li><a href="298-azurill/">298 Azurill</a></li>
+<li><a href="299-nosepass/">299 Nosepass</a></li>
+<li><a href="300-skitty/">300 Skitty</a></li>
+<li><a href="301-delcatty/">301 Delcatty</a></li>
+<li><a href="302-sableye/">302 Sableye</a></li>
+<li><a href="303-mawile/">303 Mawile</a></li>
+<li><a href="304-aron/">304 Aron</a></li>
+<li><a href="305-lairon/">305 Lairon</a></li>
+<li><a href="306-aggron/">306 Aggron</a></li>
+<li><a href="307-meditite/">307 Meditite</a></li>
+<li><a href="308-medicham/">308 Medicham</a></li>
+<li><a href="309-electrike/">309 Electrike</a></li>
+<li><a href="310-manectric/">310 Manectric</a></li>
+<li><a href="311-plusle/">311 Plusle</a></li>
+<li><a href="312-minun/">312 Minun</a></li>
+<li><a href="313-volbeat/">313 Volbeat</a></li>
+<li><a href="314-illumise/">314 Illumise</a></li>
+<li><a href="315-roselia/">315 Roselia</a></li>
+<li><a href="316-gulpin/">316 Gulpin</a></li>
+<li><a href="317-swalot/">317 Swalot</a></li>
+<li><a href="318-carvanha/">318 Carvanha</a></li>
+<li><a href="319-sharpedo/">319 Sharpedo</a></li>
+<li><a href="320-wailmer/">320 Wailmer</a></li>
+<li><a href="321-wailord/">321 Wailord</a></li>
+<li><a href="322-numel/">322 Numel</a></li>
+<li><a href="323-camerupt/">323 Camerupt</a></li>
+<li><a href="324-torkoal/">324 Torkoal</a></li>
+<li><a href="325-spoink/">325 Spoink</a></li>
+<li><a href="326-grumpig/">326 Grumpig</a></li>
+<li><a href="327-spinda/">327 Spinda</a></li>
+<li><a href="328-trapinch/">328 Trapinch</a></li>
+<li><a href="329-vibrava/">329 Vibrava</a></li>
+<li><a href="330-flygon/">330 Flygon</a></li>
+<li><a href="331-cacnea/">331 Cacnea</a></li>
+<li><a href="332-cacturne/">332 Cacturne</a></li>
+<li><a href="333-swablu/">333 Swablu</a></li>
+<li><a href="334-altaria/">334 Altaria</a></li>
+<li><a href="335-zangoose/">335 Zangoose</a></li>
+<li><a href="336-seviper/">336 Seviper</a></li>
+<li><a href="337-lunatone/">337 Lunatone</a></li>
+<li><a href="338-solrock/">338 Solrock</a></li>
+<li><a href="339-barboach/">339 Barboach</a></li>
+<li><a href="340-whiscash/">340 Whiscash</a></li>
+<li><a href="341-corphish/">341 Corphish</a></li>
+<li><a href="342-crawdaunt/">342 Crawdaunt</a></li>
+<li><a href="343-baltoy/">343 Baltoy</a></li>
+<li><a href="344-claydol/">344 Claydol</a></li>
+<li><a href="345-lileep/">345 Lileep</a></li>
+<li><a href="346-cradily/">346 Cradily</a></li>
+<li><a href="347-anorith/">347 Anorith</a></li>
+<li><a href="348-armaldo/">348 Armaldo</a></li>
+<li><a href="349-feebas/">349 Feebas</a></li>
+<li><a href="350-milotic/">350 Milotic</a></li>
+<li><a href="351-castform/">351 Castform</a></li>
+<li><a href="352-kecleon/">352 Kecleon</a></li>
+<li><a href="353-shuppet/">353 Shuppet</a></li>
+<li><a href="354-banette/">354 Banette</a></li>
+<li><a href="355-duskull/">355 Duskull</a></li>
+<li><a href="356-dusclops/">356 Dusclops</a></li>
+<li><a href="357-tropius/">357 Tropius</a></li>
+<li><a href="358-chimecho/">358 Chimecho</a></li>
+<li><a href="359-absol/">359 Absol</a></li>
+<li><a href="360-wynaut/">360 Wynaut</a></li>
+<li><a href="361-snorunt/">361 Snorunt</a></li>
+<li><a href="362-glalie/">362 Glalie</a></li>
+<li><a href="363-spheal/">363 Spheal</a></li>
+<li><a href="364-sealeo/">364 Sealeo</a></li>
+<li><a href="365-walrein/">365 Walrein</a></li>
+<li><a href="366-clamperl/">366 Clamperl</a></li>
+<li><a href="367-huntail/">367 Huntail</a></li>
+<li><a href="368-gorebyss/">368 Gorebyss</a></li>
+<li><a href="369-relicanth/">369 Relicanth</a></li>
+<li><a href="370-luvdisc/">370 Luvdisc</a></li>
+<li><a href="371-bagon/">371 Bagon</a></li>
+<li><a href="372-shelgon/">372 Shelgon</a></li>
+<li><a href="373-salamence/">373 Salamence</a></li>
+<li><a href="374-beldum/">374 Beldum</a></li>
+<li><a href="375-metang/">375 Metang</a></li>
+<li><a href="376-metagross/">376 Metagross</a></li>
+<li><a href="377-regirock/">377 Regirock</a></li>
+<li><a href="378-regice/">378 Regice</a></li>
+<li><a href="379-registeel/">379 Registeel</a></li>
+<li><a href="380-latias/">380 Latias</a></li>
+<li><a href="381-latios/">381 Latios</a></li>
+<li><a href="382-kyogre/">382 Kyogre</a></li>
+<li><a href="383-groudon/">383 Groudon</a></li>
+<li><a href="384-rayquaza/">384 Rayquaza</a></li>
+<li><a href="385-jirachi/">385 Jirachi</a></li>
+<li><a href="386-deoxys/">386 Deoxys</a></li>
+</ul>
+<h2 id="regional-forms">Regional Forms</h2>
+<ul>
+<li><a href="038-ninetales-alola/">38 Ninetales (Alolan Form)</a></li>
+<li><a href="105-marowak-alola/">105 Marowak (Alolan Form)</a></li>
+<li><a href="128-tauros-paldea/">128 Tauros (Paldean Form)</a></li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.expand", "toc.integrate", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+    
+  </body>
+</html>
