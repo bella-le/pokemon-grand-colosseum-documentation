@@ -1,0 +1,65 @@
+site_name: Pokemon Grand Colosseum Documentation
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: indigo
+      accent: indigo
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: indigo
+      accent: indigo
+
+nav:
+  - Home: index.md
+  - Game Changes:
+    - Main Changes: game-changes/main-changes.md
+    - Type Changes: game-changes/type-changes.md
+    - Stat Changes: game-changes/stat-changes.md
+    - Move Changes: game-changes/move-changes.md
+    - Ability Changes: game-changes/ability-changes.md
+    - Mount Battle Changes: game-changes/mount-battle-changes.md
+  - Gameplay:
+    - Tips If Struggling: gameplay/tips-if-struggling.md
+    - Colosseums and Level Caps: gameplay/colosseums-and-levelcaps.md
+    - Item Locations: gameplay/item-locations.md
+    - Known Issues: gameplay/known-issues.md
+    - Shadow Pokemon: gameplay/shadow-pokemon.md
+  - Pokemon Data:
+    - TM List: pokemon/tm-list.md
+    - Pokemon Stats: pokemon/stats/index.md
+    - Trainer Pokemon: pokemon/trainer-pokemon/index.md
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
