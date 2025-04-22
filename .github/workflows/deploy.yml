@@ -1,25 +1,50 @@
-name: Deploy MkDocs
+name: Build and deploy
+
 on:
-  push:
-    branches: 
-      - master
-      - main
   workflow_dispatch:
+  push:
+    tags-ignore:
+      - '**'
+    branches:
+      - main
+      - master
+    paths:
+      - 'docs/**'
+      - 'requirements.txt'
+      - 'mkdocs.yml'
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  buildAndDeploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: https://bella-le.com/pokemon-grand-colosseum-documentation
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Setup Python 3.x
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.x
-      - uses: actions/cache@v3
+          python_version: '3.x'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Build Docs
+        run: mkdocs build
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          key: ${{ github.ref }}
-          path: .cache
-      - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+          path: 'site/'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
