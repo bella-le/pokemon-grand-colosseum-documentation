@@ -1,4 +1,8 @@
 site_name: Pokemon Grand Colosseum Documentation
+site_url: https://bella-le.github.io/pokemon-grand-colosseum-documentation/
+repo_url: https://github.com/bella-le/pokemon-grand-colosseum-documentation
+repo_name: bella-le/pokemon-grand-colosseum-documentation
+use_directory_urls: true
 theme:
   name: material
   features:
