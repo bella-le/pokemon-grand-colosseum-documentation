@@ -40,7 +40,6 @@ Note that Nidoran (both genders) is not present in this romhack.
 - [036 Clefable](036-clefable.md)
 - [037 Vulpix](037-vulpix.md)
 - [038 Ninetales](038-ninetales.md)
-- [038 Ninetales (Alolan Form)](038-ninetales-alola.md)
 - [039 Jigglypuff](039-jigglypuff.md)
 - [040 Wigglytuff](040-wigglytuff.md)
 - [041 Zubat](041-zubat.md)
@@ -108,7 +107,6 @@ Note that Nidoran (both genders) is not present in this romhack.
 - [103 Exeggutor](103-exeggutor.md)
 - [104 Cubone](104-cubone.md)
 - [105 Marowak](105-marowak.md)
-- [105 Marowak (Alolan Form)](105-marowak-alola.md)
 - [106 Hitmonlee](106-hitmonlee.md)
 - [107 Hitmonchan](107-hitmonchan.md)
 - [108 Lickitung](108-lickitung.md)
@@ -132,7 +130,6 @@ Note that Nidoran (both genders) is not present in this romhack.
 - [126 Magmar](126-magmar.md)
 - [127 Pinsir](127-pinsir.md)
 - [128 Tauros](128-tauros.md)
-- [128 Tauros (Paldean Form)](128-tauros-paldea.md)
 - [129 Magikarp](129-magikarp.md)
 - [130 Gyarados](130-gyarados.md)
 - [131 Lapras](131-lapras.md)
@@ -156,6 +153,9 @@ Note that Nidoran (both genders) is not present in this romhack.
 - [149 Dragonite](149-dragonite.md)
 - [150 Mewtwo](150-mewtwo.md)
 - [151 Mew](151-mew.md)
+
+## Gen II
+
 - [152 Chikorita](152-chikorita.md)
 - [153 Bayleef](153-bayleef.md)
 - [154 Meganium](154-meganium.md)
@@ -256,6 +256,9 @@ Note that Nidoran (both genders) is not present in this romhack.
 - [249 Lugia](249-lugia.md)
 - [250 Ho-Oh](250-ho-oh.md)
 - [251 Celebi](251-celebi.md)
+
+## Gen III
+
 - [252 Treecko](252-treecko.md)
 - [253 Grovyle](253-grovyle.md)
 - [254 Sceptile](254-sceptile.md)
@@ -392,4 +395,7 @@ Note that Nidoran (both genders) is not present in this romhack.
 - [385 Jirachi](385-jirachi.md)
 - [386 Deoxys](386-deoxys.md)
 
-*More entries coming soon...*
+## Regional Forms
+- [38 Ninetales (Alolan Form)](038-ninetales-alola.md)
+- [105 Marowak (Alolan Form)](105-marowak-alola.md)
+- [128 Tauros (Paldean Form)](128-tauros-paldea.md)
